@@ -1,4 +1,4 @@
 # dailyAlgos
 
-// Daily Alumnni Algorithms
+// Daily Alumni Algorithms
 
