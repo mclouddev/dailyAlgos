@@ -32,4 +32,4 @@ function plusMinus(arr) { //function called plusMinus with one parameter of (arr
   console.log(pos.toFixed(6) + "\n" + neg.toFixed(6) + "\n" + zer.toFixed(6));
 }
 
-plusMinus(arr);
+console.log(plusMinus(arr));
