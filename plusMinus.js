@@ -6,24 +6,26 @@
 
 var arr = [-4, 3, -9, 0, 4, 1]; //example array
 
-function plusMinus(arr) { //function called plusMinus with one parameter of (arr)
-  var n = arr.length;  //establish var for the array length
-  var positive = 0; //create a var to hold positive value count which will start at zero
-  var negative = 0; //create a var to hold negative value count which will start at zero
-  var zero = 0; //create a var to hold zero value count which will start at zero
+function plusMinus(arr) {                     //function called plusMinus with one parameter of (arr)
+  var n = arr.length;                         //establish var for the array length
+  var positive = 0;                           //create a var to hold positive value count which will start at zero
+  var negative = 0;                           //create a var to hold negative value count which will start at zero
+  var zero = 0;                               //create a var to hold zero value count which will start at zero
 
-  for (var i = 0; i < n; i++) { //loop thru the array length to check array index values
-    if (arr[i] > 0) { //if array index value is a positive value
-      positive += 1; //we then increment the count of the positive var
-    } else if (arr[i] < 0) { //if the array index value is negative 
-      negative += 1; //we then increment the negative count
-    } else { // and any other value is zero
-      zero += 1; //so we increase the zero count
+  for (var i = 0; i < n; i++) {               //loop thru the array length to check array index values
+    if (arr[i] > 0) {                         //if array index value is a positive value
+      positive += 1;                          //we then increment the count of the positive var
+    } else if (arr[i] < 0) {                  //if the array index value is negative 
+      negative += 1;                          //we then increment the negative count
+    } else {                                  // and any other value is zero
+      zero += 1;                              //so we increase the zero count
     }
   }
+
   // the second step
-  //in order to print the decimal values we create new variables and take the count over the length 
+  // in order to print the decimal values we create new variables and take the count over the length 
   // of the array which will give us a fraction
+  // we can create variables for each count from above...
   var pos = positive / n;
   var neg = negative / n;
   var zer = zero / n;
